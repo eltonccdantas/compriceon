@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter create *)",
+      "Bash(flutter analyze *)",
+      "Bash(curl -s https://raw.githubusercontent.com/eltonccdantas/kivo/main/README.md)",
+      "Bash(curl -s \"https://api.github.com/repos/eltonccdantas/kivo/git/trees/main?recursive=1\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(x['path']\\) for x in data.get\\('tree',[]\\) if x['path'].endswith\\('.dart'\\)]\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/eltonccdantas/kivo/main/lib/home_page.dart\")",
+      "Bash(flutter pub *)"
+    ]
+  }
+}
