@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../core/localization.dart';
 import '../models/comparison_result.dart';
+import '../widgets/app_footer.dart';
 import '../widgets/app_header.dart';
 import '../widgets/compare_button.dart';
 import '../widgets/product_card.dart';
@@ -244,6 +245,7 @@ class _PriceComparatorPageState extends State<PriceComparatorPage>
                       )
                     : const SizedBox.shrink(key: ValueKey('empty')),
               ),
+              const AppFooter(),
             ],
           ),
         ),
