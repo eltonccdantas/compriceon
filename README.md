@@ -17,7 +17,7 @@
 
 ### What is Compriceon?
 
-Compriceon calculates and compares the **unit price** of two products to show which one offers the best value — something the human eye often gets wrong at the supermarket.
+Compriceon calculates and compares the **unit price** of two or three products to show which one offers the best value — something the human eye often gets wrong at the supermarket.
 
 A product with a higher total price may be cheaper per gram, milliliter, or unit. Compriceon does the math in seconds.
 

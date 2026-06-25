@@ -8,8 +8,8 @@ class AppStrings {
   bool get _isPortuguese => _locale == AppLocale.ptBR;
 
   String get subtitle => _isPortuguese
-      ? 'Compare o preço por unidade de dois produtos'
-      : 'Compare unit prices of two products';
+      ? 'Compare o preço por unidade de dois ou três produtos'
+      : 'Compare unit prices of two or three products';
   String productLabel(int i) {
     final letter = String.fromCharCode(65 + i);
     return _isPortuguese ? 'Produto $letter' : 'Product $letter';

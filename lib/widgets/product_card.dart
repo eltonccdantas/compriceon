@@ -20,6 +20,7 @@ class ProductCard extends StatelessWidget {
   final double badgeOpacity;
   final double badgeScale;
   final String badgeLabel;
+  final bool enabled;
 
   const ProductCard({
     super.key,
@@ -37,6 +38,7 @@ class ProductCard extends StatelessWidget {
     required this.badgeOpacity,
     required this.badgeScale,
     required this.badgeLabel,
+    this.enabled = true,
   });
 
   @override
@@ -94,6 +96,7 @@ class ProductCard extends StatelessWidget {
                           prefix: 'R\$',
                           requiredMsg: requiredMsg,
                           invalidMsg: invalidMsg,
+                          enabled: enabled,
                         ),
                       ),
                       const SizedBox(width: 10),
@@ -105,6 +108,7 @@ class ProductCard extends StatelessWidget {
                           suffix: 'un',
                           requiredMsg: requiredMsg,
                           invalidMsg: invalidMsg,
+                          enabled: enabled,
                         ),
                       ),
                     ],
@@ -229,6 +233,7 @@ class _NumField extends StatelessWidget {
   final String? suffix;
   final String requiredMsg;
   final String invalidMsg;
+  final bool enabled;
 
   const _NumField({
     required this.controller,
@@ -238,6 +243,7 @@ class _NumField extends StatelessWidget {
     this.suffix,
     required this.requiredMsg,
     required this.invalidMsg,
+    this.enabled = true,
   });
 
   @override
@@ -248,6 +254,7 @@ class _NumField extends StatelessWidget {
 
     return TextFormField(
       controller: controller,
+      enabled: enabled,
       keyboardType: const TextInputType.numberWithOptions(decimal: true),
       inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]'))],
       style: TextStyle(

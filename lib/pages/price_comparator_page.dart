@@ -279,6 +279,7 @@ class _PriceComparatorPageState extends State<PriceComparatorPage>
             badgeOpacity: 0.0,
             badgeScale: 0.0,
             badgeLabel: strings.bestOption,
+            enabled: result == null,
           );
         }
 
@@ -298,6 +299,7 @@ class _PriceComparatorPageState extends State<PriceComparatorPage>
           badgeOpacity: isWinner ? _badgeOpacity.value : 0.0,
           badgeScale: isWinner ? _badgeScale.value : 0.0,
           badgeLabel: strings.bestOption,
+          enabled: false,
         );
       },
     );
